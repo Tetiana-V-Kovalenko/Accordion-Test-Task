@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/accordion-test-task/static/css/main.6845c5bb.css",
+    "main.js": "/accordion-test-task/static/js/main.9506861c.js",
+    "index.html": "/accordion-test-task/index.html",
+    "main.6845c5bb.css.map": "/accordion-test-task/static/css/main.6845c5bb.css.map",
+    "main.9506861c.js.map": "/accordion-test-task/static/js/main.9506861c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6845c5bb.css",
+    "static/js/main.9506861c.js"
+  ]
+}
