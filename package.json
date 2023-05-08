@@ -2,7 +2,7 @@
   "name": "accordion-test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goitacademy.github.io/accordion-test-task/",
+  "homepage": " https://tetiana-v-kovalenko.github.io/Accordion-Test-Task/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
