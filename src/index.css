@@ -1,10 +1,11 @@
 .accordion {
   margin: 25px auto 0;
+  padding: 0;
   width: 25%;
 }
 .accordion_item {
   list-style: none;
-  border: solid 2px #6e781c;
+  border: solid 2px #8b5c04;
 }
 .accordion_item:not(:last-of-type) {
   margin-bottom: 5px;
@@ -15,7 +16,7 @@
 .accordion_title {
   margin: 0 auto;
   padding: 10px 15px;
-  background-color: #6e781c;
+  background-color: #f5ba4e;
 }
 .accordion_icon {
   margin-left: auto;
@@ -27,7 +28,7 @@
   display: block;
   margin: 0 auto;
   padding: 10px 15px;
-  background-color: #eef1d9;
+  background-color: #ede1cc;
 }
 .vissually_hidden {
   display: none;

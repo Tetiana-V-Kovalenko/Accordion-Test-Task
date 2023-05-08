@@ -1,39 +1,25 @@
 import { useState } from 'react';
-// import { AccordionItems } from './AccordionItem';
-import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
+import { AccordionItems } from './AccordionItem';
 
 export const Accordion = ({ data }) => {
   const [selected, setSelected] = useState(null);
-  const toggleContent = index => {
-    if (selected === index) {
+  const toggleContent = title => {
+    if (selected === title) {
       return setSelected(null);
     }
-    setSelected(index);
+    setSelected(title);
   };
 
   return (
     <ul className="accordion">
-      {data.map(({ title, content }, index) => (
-        <li key={title} className="accordion_item">
-          <div
-            className="accordion_title_block"
-            onClick={() => {
-              toggleContent(index);
-            }}
-          >
-            <h3 className="accordion_title">
-              {title}{' '}
-              {selected === index ? <AiFillCaretUp /> : <AiFillCaretDown />}{' '}
-            </h3>{' '}
-          </div>
-          <p
-            className={
-              selected === index ? 'accordion_content' : 'vissually_hidden '
-            }
-          >
-            {content}
-          </p>
-        </li>
+      {data.map(({ title, content }) => (
+        <AccordionItems
+          key={title}
+          title={title}
+          content={content}
+          isOpened={selected === title ? true : false}
+          onClick={() => toggleContent(title)}
+        />
       ))}
     </ul>
   );
